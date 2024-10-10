@@ -1,0 +1,163 @@
+[2024-10-10T17:58:50.123+0000] {manager.py:483} INFO - Processing files using up to 2 processes at a time 
+[2024-10-10T17:58:50.124+0000] {manager.py:484} INFO - Process each file at most once every 5 seconds
+[2024-10-10T17:58:50.124+0000] {manager.py:486} INFO - Checking for new files in /opt/airflow/dags every 20 seconds
+[2024-10-10T17:58:50.124+0000] {manager.py:726} INFO - Searching for files in /opt/airflow/dags
+[2024-10-10T17:58:50.130+0000] {manager.py:729} INFO - There are 16 files in /opt/airflow/dags
+[2024-10-10T17:58:50.218+0000] {manager.py:854} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                           PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------  -----  ---------  --------  ----------  --------------  ----------
+/opt/airflow/dags/dagcomplexa.py                           0           0
+/opt/airflow/dags/dummy.py           42  0.04s             0           0
+/opt/airflow/dags/defaultargs.py                           0           0
+/opt/airflow/dags/xcom.py                                  0           0
+/opt/airflow/dags/dagrundag2.py                            0           0
+/opt/airflow/dags/segundadag.py                            0           0
+/opt/airflow/dags/quartadag.py                             0           0
+/opt/airflow/dags/email.py                                 0           0
+/opt/airflow/dags/variaveis.py       41  0.05s             0           0
+/opt/airflow/dags/triggerDag3.py                           0           0
+/opt/airflow/dags/terceiradag.py                           0           0
+/opt/airflow/dags/triggerDag1.py                           0           0
+/opt/airflow/dags/triggerDag2.py                           0           0
+/opt/airflow/dags/daggroup.py                              0           0
+/opt/airflow/dags/dagrundag1.py                            0           0
+/opt/airflow/dags/primeiradag.py                           0           0
+================================================================================
+[2024-10-10T17:59:08.342+0000] {manager.py:465} INFO - Exiting gracefully upon receiving signal 15
+[2024-10-10T18:00:00.432+0000] {manager.py:483} INFO - Processing files using up to 2 processes at a time 
+[2024-10-10T18:00:00.434+0000] {manager.py:484} INFO - Process each file at most once every 5 seconds
+[2024-10-10T18:00:00.434+0000] {manager.py:486} INFO - Checking for new files in /opt/airflow/dags every 20 seconds
+[2024-10-10T18:00:00.434+0000] {manager.py:726} INFO - Searching for files in /opt/airflow/dags
+[2024-10-10T18:00:00.439+0000] {manager.py:729} INFO - There are 16 files in /opt/airflow/dags
+[2024-10-10T18:00:00.495+0000] {manager.py:854} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                           PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------  -----  ---------  --------  ----------  --------------  ----------
+/opt/airflow/dags/dagcomplexa.py                           0           0
+/opt/airflow/dags/dummy.py           42  0.03s             0           0
+/opt/airflow/dags/defaultargs.py                           0           0
+/opt/airflow/dags/xcom.py                                  0           0
+/opt/airflow/dags/dagrundag2.py                            0           0
+/opt/airflow/dags/segundadag.py                            0           0
+/opt/airflow/dags/quartadag.py                             0           0
+/opt/airflow/dags/email.py                                 0           0
+/opt/airflow/dags/variaveis.py       41  0.03s             0           0
+/opt/airflow/dags/triggerDag3.py                           0           0
+/opt/airflow/dags/terceiradag.py                           0           0
+/opt/airflow/dags/triggerDag1.py                           0           0
+/opt/airflow/dags/triggerDag2.py                           0           0
+/opt/airflow/dags/daggroup.py                              0           0
+/opt/airflow/dags/dagrundag1.py                            0           0
+/opt/airflow/dags/primeiradag.py                           0           0
+================================================================================
+[2024-10-10T18:00:20.479+0000] {manager.py:726} INFO - Searching for files in /opt/airflow/dags
+[2024-10-10T18:00:20.487+0000] {manager.py:729} INFO - There are 16 files in /opt/airflow/dags
+[2024-10-10T18:00:31.165+0000] {manager.py:854} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dagcomplexa.py                           1           0  0.08s           2024-10-10T18:00:27
+/opt/airflow/dags/dummy.py                                 1           0  0.09s           2024-10-10T18:00:27
+/opt/airflow/dags/defaultargs.py                           1           0  0.09s           2024-10-10T18:00:27
+/opt/airflow/dags/xcom.py                                  1           0  0.10s           2024-10-10T18:00:27
+/opt/airflow/dags/dagrundag2.py                            1           0  0.08s           2024-10-10T18:00:27
+/opt/airflow/dags/segundadag.py                            1           0  0.10s           2024-10-10T18:00:29
+/opt/airflow/dags/quartadag.py                             1           0  0.10s           2024-10-10T18:00:28
+/opt/airflow/dags/email.py                                 1           0  0.09s           2024-10-10T18:00:27
+/opt/airflow/dags/variaveis.py                             1           0  0.07s           2024-10-10T18:00:27
+/opt/airflow/dags/triggerDag3.py                           1           0  0.08s           2024-10-10T18:00:27
+/opt/airflow/dags/terceiradag.py                           1           0  0.10s           2024-10-10T18:00:29
+/opt/airflow/dags/triggerDag1.py                           1           0  0.10s           2024-10-10T18:00:28
+/opt/airflow/dags/triggerDag2.py                           1           0  0.10s           2024-10-10T18:00:27
+/opt/airflow/dags/daggroup.py                              1           0  0.09s           2024-10-10T18:00:27
+/opt/airflow/dags/dagrundag1.py                            1           0  0.08s           2024-10-10T18:00:27
+/opt/airflow/dags/primeiradag.py                           1           0  0.08s           2024-10-10T18:00:29
+================================================================================
+[2024-10-10T18:00:40.842+0000] {manager.py:726} INFO - Searching for files in /opt/airflow/dags
+[2024-10-10T18:00:40.846+0000] {manager.py:729} INFO - There are 16 files in /opt/airflow/dags
+[2024-10-10T18:01:01.439+0000] {manager.py:726} INFO - Searching for files in /opt/airflow/dags
+[2024-10-10T18:01:01.442+0000] {manager.py:729} INFO - There are 16 files in /opt/airflow/dags
+[2024-10-10T18:01:01.465+0000] {manager.py:854} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                           PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dagcomplexa.py                           1           0  0.09s           2024-10-10T18:01:00
+/opt/airflow/dags/dummy.py                                 1           0  0.08s           2024-10-10T18:00:59
+/opt/airflow/dags/defaultargs.py                           1           0  0.10s           2024-10-10T18:01:00
+/opt/airflow/dags/xcom.py                                  1           0  0.11s           2024-10-10T18:01:00
+/opt/airflow/dags/dagrundag2.py                            1           0  0.07s           2024-10-10T18:01:00
+/opt/airflow/dags/segundadag.py                            1           0  0.11s           2024-10-10T18:00:56
+/opt/airflow/dags/quartadag.py      328  0.00s             1           0  0.10s           2024-10-10T18:00:56
+/opt/airflow/dags/email.py                                 1           0  0.10s           2024-10-10T18:00:59
+/opt/airflow/dags/variaveis.py                             1           0  0.11s           2024-10-10T18:00:59
+/opt/airflow/dags/triggerDag3.py                           1           0  0.09s           2024-10-10T18:01:00
+/opt/airflow/dags/terceiradag.py                           1           0  0.09s           2024-10-10T18:00:56
+/opt/airflow/dags/triggerDag1.py    327  0.01s             1           0  0.12s           2024-10-10T18:00:56
+/opt/airflow/dags/triggerDag2.py                           1           0  0.09s           2024-10-10T18:01:00
+/opt/airflow/dags/daggroup.py                              1           0  0.10s           2024-10-10T18:01:00
+/opt/airflow/dags/dagrundag1.py                            1           0  0.11s           2024-10-10T18:01:00
+/opt/airflow/dags/primeiradag.py                           1           0  0.10s           2024-10-10T18:00:56
+================================================================================
+[2024-10-10T18:01:21.452+0000] {manager.py:726} INFO - Searching for files in /opt/airflow/dags
+[2024-10-10T18:01:21.459+0000] {manager.py:729} INFO - There are 16 files in /opt/airflow/dags
+[2024-10-10T18:01:32.157+0000] {manager.py:854} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dagcomplexa.py                           1           0  0.12s           2024-10-10T18:01:29
+/opt/airflow/dags/dummy.py                                 1           0  0.09s           2024-10-10T18:01:29
+/opt/airflow/dags/defaultargs.py                           1           0  0.10s           2024-10-10T18:01:29
+/opt/airflow/dags/xcom.py                                  1           0  0.10s           2024-10-10T18:01:29
+/opt/airflow/dags/dagrundag2.py                            1           0  0.09s           2024-10-10T18:01:29
+/opt/airflow/dags/segundadag.py                            1           0  0.08s           2024-10-10T18:01:31
+/opt/airflow/dags/quartadag.py                             1           0  0.13s           2024-10-10T18:01:31
+/opt/airflow/dags/email.py                                 1           0  0.10s           2024-10-10T18:01:29
+/opt/airflow/dags/variaveis.py                             1           0  0.09s           2024-10-10T18:01:29
+/opt/airflow/dags/triggerDag3.py                           1           0  0.10s           2024-10-10T18:01:29
+/opt/airflow/dags/terceiradag.py                           1           0  0.10s           2024-10-10T18:01:31
+/opt/airflow/dags/triggerDag1.py                           1           0  0.10s           2024-10-10T18:01:31
+/opt/airflow/dags/triggerDag2.py                           1           0  0.11s           2024-10-10T18:01:29
+/opt/airflow/dags/daggroup.py                              1           0  0.09s           2024-10-10T18:01:29
+/opt/airflow/dags/dagrundag1.py                            1           0  0.09s           2024-10-10T18:01:29
+/opt/airflow/dags/primeiradag.py                           1           0  0.11s           2024-10-10T18:01:31
+================================================================================
+[2024-10-10T18:01:41.467+0000] {manager.py:726} INFO - Searching for files in /opt/airflow/dags
+[2024-10-10T18:01:41.471+0000] {manager.py:729} INFO - There are 16 files in /opt/airflow/dags
+[2024-10-10T18:02:01.535+0000] {manager.py:726} INFO - Searching for files in /opt/airflow/dags
+[2024-10-10T18:02:01.540+0000] {manager.py:729} INFO - There are 16 files in /opt/airflow/dags
+[2024-10-10T18:02:02.556+0000] {manager.py:854} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dagcomplexa.py                           1           0  0.10s           2024-10-10T18:01:59
+/opt/airflow/dags/dummy.py                                 1           0  0.11s           2024-10-10T18:01:58
+/opt/airflow/dags/defaultargs.py                           1           0  0.11s           2024-10-10T18:01:58
+/opt/airflow/dags/xcom.py                                  1           0  0.11s           2024-10-10T18:01:58
+/opt/airflow/dags/dagrundag2.py                            1           0  0.10s           2024-10-10T18:01:59
+/opt/airflow/dags/segundadag.py                            1           0  0.12s           2024-10-10T18:02:00
+/opt/airflow/dags/quartadag.py                             1           0  0.15s           2024-10-10T18:02:00
+/opt/airflow/dags/email.py                                 1           0  0.11s           2024-10-10T18:01:58
+/opt/airflow/dags/variaveis.py                             1           0  0.10s           2024-10-10T18:01:58
+/opt/airflow/dags/triggerDag3.py                           1           0  0.11s           2024-10-10T18:01:59
+/opt/airflow/dags/terceiradag.py                           1           0  0.13s           2024-10-10T18:02:00
+/opt/airflow/dags/triggerDag1.py                           1           0  0.15s           2024-10-10T18:02:00
+/opt/airflow/dags/triggerDag2.py                           1           0  0.11s           2024-10-10T18:01:59
+/opt/airflow/dags/daggroup.py                              1           0  0.10s           2024-10-10T18:01:59
+/opt/airflow/dags/dagrundag1.py                            1           0  0.12s           2024-10-10T18:01:58
+/opt/airflow/dags/primeiradag.py                           1           0  0.10s           2024-10-10T18:02:00
+================================================================================
+[2024-10-10T18:02:22.339+0000] {manager.py:726} INFO - Searching for files in /opt/airflow/dags
+[2024-10-10T18:02:22.345+0000] {manager.py:729} INFO - There are 16 files in /opt/airflow/dags
