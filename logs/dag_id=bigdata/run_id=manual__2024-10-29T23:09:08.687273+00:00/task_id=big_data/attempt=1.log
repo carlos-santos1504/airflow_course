@@ -1,0 +1,34 @@
+[2024-10-29T23:09:10.785+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: bigdata.big_data manual__2024-10-29T23:09:08.687273+00:00 [queued]>
+[2024-10-29T23:09:10.799+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: bigdata.big_data manual__2024-10-29T23:09:08.687273+00:00 [queued]>
+[2024-10-29T23:09:10.799+0000] {taskinstance.py:1279} INFO - 
+--------------------------------------------------------------------------------
+[2024-10-29T23:09:10.799+0000] {taskinstance.py:1280} INFO - Starting attempt 1 of 1
+[2024-10-29T23:09:10.799+0000] {taskinstance.py:1281} INFO - 
+--------------------------------------------------------------------------------
+[2024-10-29T23:09:10.816+0000] {taskinstance.py:1300} INFO - Executing <Task(BigDataOperator): big_data> on 2024-10-29 23:09:08.687273+00:00
+[2024-10-29T23:09:10.825+0000] {standard_task_runner.py:55} INFO - Started process 829 to run task
+[2024-10-29T23:09:10.832+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'bigdata', 'big_data', 'manual__2024-10-29T23:09:08.687273+00:00', '--job-id', '25', '--raw', '--subdir', 'DAGS_FOLDER/bigdata.py', '--cfg-path', '/tmp/tmpys6hsj_t']
+[2024-10-29T23:09:10.835+0000] {standard_task_runner.py:83} INFO - Job 25: Subtask big_data
+[2024-10-29T23:09:10.938+0000] {task_command.py:388} INFO - Running <TaskInstance: bigdata.big_data manual__2024-10-29T23:09:08.687273+00:00 [running]> on host 55e2175811f2
+[2024-10-29T23:09:11.067+0000] {taskinstance.py:1509} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=bigdata
+AIRFLOW_CTX_TASK_ID=big_data
+AIRFLOW_CTX_EXECUTION_DATE=2024-10-29T23:09:08.687273+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2024-10-29T23:09:08.687273+00:00
+[2024-10-29T23:09:11.087+0000] {taskinstance.py:1768} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/opt/airflow/dags/big_data_operator.py", line 22, in execute
+    df.to_json(self.path_to_save_file)
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/core/generic.py", line 2571, in to_json
+    storage_options=storage_options,
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/io/json/_json.py", line 131, in to_json
+    path_or_buf, "w", compression=compression, storage_options=storage_options
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/io/common.py", line 707, in get_handle
+    newline="",
+PermissionError: [Errno 13] Permission denied: '/opt/airflow/data/Churn.json'
+[2024-10-29T23:09:11.106+0000] {taskinstance.py:1323} INFO - Marking task as FAILED. dag_id=bigdata, task_id=big_data, execution_date=20241029T230908, start_date=20241029T230910, end_date=20241029T230911
+[2024-10-29T23:09:11.135+0000] {standard_task_runner.py:105} ERROR - Failed to execute job 25 for task big_data ([Errno 13] Permission denied: '/opt/airflow/data/Churn.json'; 829)
+[2024-10-29T23:09:11.163+0000] {local_task_job.py:208} INFO - Task exited with return code 1
+[2024-10-29T23:09:11.197+0000] {taskinstance.py:2578} INFO - 0 downstream tasks scheduled from follow-on schedule check

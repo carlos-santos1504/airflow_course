@@ -1,0 +1,26 @@
+[2024-10-29T23:09:10.187+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: brachtest.brach_task manual__2024-10-29T23:09:07.030326+00:00 [queued]>
+[2024-10-29T23:09:10.206+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: brachtest.brach_task manual__2024-10-29T23:09:07.030326+00:00 [queued]>
+[2024-10-29T23:09:10.207+0000] {taskinstance.py:1279} INFO - 
+--------------------------------------------------------------------------------
+[2024-10-29T23:09:10.207+0000] {taskinstance.py:1280} INFO - Starting attempt 1 of 1
+[2024-10-29T23:09:10.207+0000] {taskinstance.py:1281} INFO - 
+--------------------------------------------------------------------------------
+[2024-10-29T23:09:10.238+0000] {taskinstance.py:1300} INFO - Executing <Task(BranchPythonOperator): brach_task> on 2024-10-29 23:09:07.030326+00:00
+[2024-10-29T23:09:10.248+0000] {standard_task_runner.py:55} INFO - Started process 813 to run task
+[2024-10-29T23:09:10.252+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'brachtest', 'brach_task', 'manual__2024-10-29T23:09:07.030326+00:00', '--job-id', '22', '--raw', '--subdir', 'DAGS_FOLDER/branchs.py', '--cfg-path', '/tmp/tmp92n_1qlx']
+[2024-10-29T23:09:10.253+0000] {standard_task_runner.py:83} INFO - Job 22: Subtask brach_task
+[2024-10-29T23:09:10.381+0000] {task_command.py:388} INFO - Running <TaskInstance: brachtest.brach_task manual__2024-10-29T23:09:07.030326+00:00 [running]> on host 55e2175811f2
+[2024-10-29T23:09:10.517+0000] {taskinstance.py:1509} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=brachtest
+AIRFLOW_CTX_TASK_ID=brach_task
+AIRFLOW_CTX_EXECUTION_DATE=2024-10-29T23:09:07.030326+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2024-10-29T23:09:07.030326+00:00
+[2024-10-29T23:09:10.538+0000] {python.py:177} INFO - Done. Returned value was: par_task
+[2024-10-29T23:09:10.539+0000] {python.py:211} INFO - Branch callable return par_task
+[2024-10-29T23:09:10.539+0000] {skipmixin.py:155} INFO - Following branch par_task
+[2024-10-29T23:09:10.539+0000] {skipmixin.py:211} INFO - Skipping tasks ['impar_task']
+[2024-10-29T23:09:10.634+0000] {taskinstance.py:1323} INFO - Marking task as SUCCESS. dag_id=brachtest, task_id=brach_task, execution_date=20241029T230907, start_date=20241029T230910, end_date=20241029T230910
+[2024-10-29T23:09:10.667+0000] {local_task_job.py:208} INFO - Task exited with return code 0
+[2024-10-29T23:09:10.721+0000] {taskinstance.py:2578} INFO - 1 downstream tasks scheduled from follow-on schedule check

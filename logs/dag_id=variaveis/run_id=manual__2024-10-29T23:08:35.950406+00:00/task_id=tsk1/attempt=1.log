@@ -1,0 +1,34 @@
+[2024-10-29T23:08:36.635+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: variaveis.tsk1 manual__2024-10-29T23:08:35.950406+00:00 [queued]>
+[2024-10-29T23:08:36.652+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: variaveis.tsk1 manual__2024-10-29T23:08:35.950406+00:00 [queued]>
+[2024-10-29T23:08:36.652+0000] {taskinstance.py:1279} INFO - 
+--------------------------------------------------------------------------------
+[2024-10-29T23:08:36.652+0000] {taskinstance.py:1280} INFO - Starting attempt 1 of 1
+[2024-10-29T23:08:36.652+0000] {taskinstance.py:1281} INFO - 
+--------------------------------------------------------------------------------
+[2024-10-29T23:08:36.670+0000] {taskinstance.py:1300} INFO - Executing <Task(PythonOperator): tsk1> on 2024-10-29 23:08:35.950406+00:00
+[2024-10-29T23:08:36.677+0000] {standard_task_runner.py:55} INFO - Started process 717 to run task
+[2024-10-29T23:08:36.680+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'variaveis', 'tsk1', 'manual__2024-10-29T23:08:35.950406+00:00', '--job-id', '7', '--raw', '--subdir', 'DAGS_FOLDER/variaveis.py', '--cfg-path', '/tmp/tmpckea66w_']
+[2024-10-29T23:08:36.680+0000] {standard_task_runner.py:83} INFO - Job 7: Subtask tsk1
+[2024-10-29T23:08:36.740+0000] {task_command.py:388} INFO - Running <TaskInstance: variaveis.tsk1 manual__2024-10-29T23:08:35.950406+00:00 [running]> on host 55e2175811f2
+[2024-10-29T23:08:36.823+0000] {taskinstance.py:1509} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=variaveis
+AIRFLOW_CTX_TASK_ID=tsk1
+AIRFLOW_CTX_EXECUTION_DATE=2024-10-29T23:08:35.950406+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2024-10-29T23:08:35.950406+00:00
+[2024-10-29T23:08:36.833+0000] {taskinstance.py:1768} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 175, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 192, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/variaveis.py", line 12, in print_variable
+    minha_var = Variable.get('minhavar')
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/variable.py", line 141, in get
+    raise KeyError(f"Variable {key} does not exist")
+KeyError: 'Variable minhavar does not exist'
+[2024-10-29T23:08:36.840+0000] {taskinstance.py:1323} INFO - Marking task as FAILED. dag_id=variaveis, task_id=tsk1, execution_date=20241029T230835, start_date=20241029T230836, end_date=20241029T230836
+[2024-10-29T23:08:36.852+0000] {standard_task_runner.py:105} ERROR - Failed to execute job 7 for task tsk1 ('Variable minhavar does not exist'; 717)
+[2024-10-29T23:08:36.892+0000] {local_task_job.py:208} INFO - Task exited with return code 1
+[2024-10-29T23:08:36.911+0000] {taskinstance.py:2578} INFO - 0 downstream tasks scheduled from follow-on schedule check
